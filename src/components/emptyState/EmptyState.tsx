@@ -1,7 +1,7 @@
 import { EmptyState } from '../../assets/svg'
-import { Button } from '../../../src'
 import { Plus } from 'react-feather'
 import { Link } from 'react-router-dom'
+import Button from '../button'
 
 interface EmptyStateCPI {
   subject: string

@@ -1,8 +1,9 @@
 import SwitchCp from '@mui/material/Switch'
-import { Button, Modal } from '../../../src'
 import { useState } from 'react'
 
 import SwitchStyledContainer from './Switch.style'
+import Modal from '../modal'
+import Button from '../button'
 
 interface SwitchPropsI {
   className?: string

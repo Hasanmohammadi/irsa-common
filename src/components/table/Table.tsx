@@ -1,11 +1,13 @@
 import Box from '@mui/material/Box'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import { GridValidRowModel } from '@mui/x-data-grid/models'
-import { Button, EmptyState, TableLoading } from '../../../src'
 import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import TableStyledContainer from './Table.style'
+import { TableLoading } from '../loading'
+import Button from '../button'
+import { EmptyState } from '../..'
 
 interface TablePropsI {
   rows: GridValidRowModel[]

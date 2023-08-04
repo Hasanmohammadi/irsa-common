@@ -1,13 +1,13 @@
 {
   "name": "irsa-common",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "This is all components that use in irsa projects.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/Hasanmohammadi/irsa-common.git"
+    "url": "https://github.com/Hasanmohammadi/irsa-common.git"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -46,6 +46,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^29.6.2",
     "jest-canvas-mock": "^2.5.2",
     "jest-environment-jsdom": "^29.6.2",
@@ -55,6 +56,11 @@
     "ts-jest": "^29.1.1",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

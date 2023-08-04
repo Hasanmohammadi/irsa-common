@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'PoppinsFont';
+  src: local('PoppinsFont'), url('./Inter-Thin.ttf') format('ttf'),
+    url('./Inter-SemiBold.ttf') format('ttf'),
+    url('./Inter-Regular.ttf') format('ttf'),
+    url('./Inter-Medium.ttf') format('ttf'),
+    url('./Inter-Light.ttf') format('ttf'),
+    url('./Inter-ExtraLight.ttf') format('ttf'),
+    url('./Inter-ExtraBold.ttf') format('ttf'),
+    url('./Inter-Bold.ttf') format('ttf'),
+    url('./Inter-Black.ttf') format('ttf');
+}

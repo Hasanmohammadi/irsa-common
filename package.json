@@ -1,0 +1,72 @@
+{
+  "name": "irsa-common",
+  "version": "0.0.1",
+  "description": "This is all components that use in irsa projects.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/Hasanmohammadi/irsa-common.git"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "irsa",
+    "typescript",
+    "mui-components-customize"
+  ],
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+  },
+  "author": "Hassan Mohammadi",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.18",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.2",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "prettier": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-jest": "^29.1.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.10.5",
+    "@hassanmojab/react-modern-calendar-datepicker": "^3.1.7",
+    "@mui/material": "^5.11.5",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/x-data-grid": "^5.17.22",
+    "clsx": "^2.0.0",
+    "react-feather": "^2.0.10",
+    "react-hook-form": "^7.45.2",
+    "react-router-dom": "^6.14.2",
+    "styled-components": "^6.0.7"
+  }
+}
